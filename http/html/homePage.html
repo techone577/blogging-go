@@ -1,15 +1,13 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
     <title>
         TECHONE
     </title>
-    <link rel="canonical" href="/view/blog/home">
+    <link rel="canonical" href="/home">
     <link rel="shortcut icon" href="/images/avatar/avatar.jpeg"/>
 
     <link href="/css/home/all.min.css" rel="stylesheet">
-    <%--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">--%>
     <link href="/css/home/font.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/home/mdb.min.css" rel="stylesheet">
@@ -29,11 +27,9 @@
 
 <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
 
-<%--导航栏--%>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
-        <%--商标logo--%>
-        <a class="navbar-brand" href="/view/blog/home">
+        <a class="navbar-brand" href="/home">
             <img class="avatar" src="" style="width: 40px!important;height: auto;" class="d-inline-block align-top"
                  alt="">
             <strong> TECHONE</strong>
@@ -43,28 +39,25 @@
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <%--导航栏组件--%>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item  active ">
-                    <a class="nav-link" href="/view/blog/home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="/view/blog/postlist?tag=LeetCode">LeetCode </a>
+                    <a class="nav-link" href="/postlist?tag=LeetCode">LeetCode </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="/view/blog/postlist">Blog </a>
+                    <a class="nav-link" href="/postlist">Blog </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="/view/blog/about">About </a>
+                    <a class="nav-link" href="/about">About </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-
-<%--背景--%>
 
 <div id="site-header" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -83,7 +76,6 @@
 
     </ol>
 
-    <%--背景jpg--%>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
             <div class="view"
@@ -132,12 +124,12 @@
     <div class="carousel-content text-center white-text wow fadeIn">
         <div class="row mx-0 headfont mb-5 pb-3">
             <div class="col-12 col-sm-5 align-middle">
-                <a href="/view/blog/home">
+                <a href="/home">
                     <img class="pull-right avatar avatar-lg " src="/images/avatar/avatar.jpeg" alt="">
                 </a>
             </div>
             <div class="col-12 col-sm-7 text-left pl-5">
-                <a href="/view/blog/home">
+                <a href="/home">
                     <h1 class="display-4 mb-2 mt-2 h1">
                         <strong>TECHONE_DUAN</strong>
                     </h1>
@@ -152,19 +144,14 @@
                     Do the right things and be a better man.
                 </p>
 
-                <%--社交图标--%>
                 <div class="mt-2" style="font-size: 2rem; color: white;">
 
-                    <%--github--%>
                     <a href="https://github.com/techone577" target="_blank" rel="noopener"><i class="fab fa-github pr-1"
                                                                                               aria-hidden="true"></i></a>
-                    <%--weibo--%>
                     <a href="https://weibo.com/u/2279734863" target="_blank" rel="noopener"><i class="fab fa-weibo pr-1"
                                                                                                aria-hidden="true"></i></a>
-                    <%--instagram--%>
                     <a href="mailto:duanyuntian577@gmail.com" target="_blank" rel="noopener"><i
                             class="fab fa-google pr-1" aria-hidden="true"></i></a>
-                    <%--envelope--%>
                     <a href="mailto:zhengziou@gmail.com"><i class="far fa-envelope-open pr-1"
                                                             aria-hidden="true"></i></a>
 
@@ -176,12 +163,10 @@
     </div>
 
 
-    <%--prev--%>
     <a class="carousel-control-prev" href="#site-header" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <%--next--%>
     <a class="carousel-control-next" href="#site-header" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
@@ -201,29 +186,25 @@
 <main class="post-main-wrapper px-5">
     <div class="row">
 
-        <%--main 侧边--%>
         <div class="col-md-3">
             <hr>
-            <%--tag--%>
             <div class="post-meta">
                 <div class="mb-2">
-                    <a href="/view/blog/tagShow">
+                    <a href="/tagShow">
                          <span class="font-weight-bold text-uppercase post-meta">
                             <i class="fas fa-tags pr-1" aria-hidden="true"></i>
                                 Featured Tags
                          </span>
                     </a>
                 </div>
-                <%--tags--%>
                 <div class="li-x post-meta tags-md" id="tag_info_list" style="margin-left: -8px;">
 
                 </div>
             </div>
             <hr>
-            <%--series card--%>
             <div class="post-meta">
                 <div class="mb-2">
-                    <a href="/view/blog/categoryShow">
+                    <a href="/categoryShow">
                         <span class="font-weight-bold text-uppercase post-meta">
                             <i class="fas fa-bookmark pr-1" aria-hidden="true"></i>
                                 Recommend Series
@@ -231,7 +212,6 @@
                     </a>
                 </div>
 
-                <%--series card--%>
                 <div class="post-meta" id="home_category_container">
 
                 </div>
@@ -239,8 +219,6 @@
 
             </div>
         </div>
-
-        <%--main 文章--%>
         <div class="col-md-9 mt-3">
             <div id="post_container">
 
@@ -252,7 +230,6 @@
     </div>
 </main>
 
-<%-- 文章展示模板 --%>
 <div class="post-wrapper white-bg post-card" id="post_template" style="display: none">
     <a class="a">
         <div class="post-header text-center">
@@ -264,7 +241,6 @@
             </ul>
         </div>
         <div class="view">
-            <%--图片--%>
             <img class="img"/>
         </div>
         <div class="summary">概述</div>
@@ -272,15 +248,13 @@
     </a>
 
     <div class="post-meta li-x mt-2 div-x">
-        <%-- 所属series--%>
         <div class="post_categories">
             <li class="category_li"><a class="category_a"><i class="fas fa-folder-open pr-1"
                                                              aria-hidden="true"></i><span></span></a></li>
         </div>
-        <%-- 所持有的tag --%>
         <div>
             <div class="li-x div-x post-meta">
-                <li class="pr-0"><a href="/view/blog/tagShow"><i class="fas fa-tags"></i></a></li>
+                <li class="pr-0"><a href="/tagShow"><i class="fas fa-tags"></i></a></li>
                 <div class="tags-sm post_tags" id="post_tags">
                 </div>
             </div>
@@ -290,7 +264,6 @@
 
 </div>
 
-<%-- card模板 --%>
 <div class="card card-cascade wider mb-4 mt-2" id="category_card_template" style="display: none">
     <a class="category_href">
         <div class="view view-cascade overlay">
@@ -304,7 +277,6 @@
     </a>
 </div>
 
-<%--tag模板--%>
 <li id="tag_template"><a class="home_tag" role="button" style="display: none">名称 </a></li>
 
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">

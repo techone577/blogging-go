@@ -172,7 +172,7 @@ $(function () {
             $("#post_list_amount").text(json.data.totalNum + " posts");
         } else {
             console.log("load fail");
-            if(json.errorCode == 10006)
+            if(json.errorCode == 404)
                 window.location.href = "http://www.ixirong.com/404.html"
         }
     });
@@ -181,7 +181,7 @@ $(function () {
 
 function getAction() {
     return {
-        postListQuery: "/post/queryPostList"
+        postListQuery: "/queryPostList"
     }
 };
 

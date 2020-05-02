@@ -37,7 +37,7 @@ $(function () {
     }
 
     var displayParam = {
-        postId: "PO244713133413761024190504"
+        postId: "PO268700436268056576190709"
     };
     //加载blog
     ajaxOption(getAction().queryBlog, JSON.stringify(displayParam), function (json) {
@@ -50,7 +50,7 @@ $(function () {
 
 function getAction() {
     return {
-        queryBlog: "/post/queryBlog"
+        queryBlog: "/queryPost"
     }
 };
 

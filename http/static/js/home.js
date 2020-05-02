@@ -151,7 +151,7 @@ $(function () {
 
 function getAction() {
     return {
-        homePageListQuery: "/post//queryPostList"
+        homePageListQuery: "/queryPostList"
     }
 };
 
